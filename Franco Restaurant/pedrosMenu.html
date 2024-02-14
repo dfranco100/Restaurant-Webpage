@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Pedro's Tex-Mex Menu</title>
+</head>
+<body>
+    <h1 class="Header">Pedro's Tex-Mex Menu</h1>
+    
+    <!--Form with menu-->
+    <form class="Menu">
+        <!--Appetizers-->
+        <h2>Appetizers</h2>
+        <input type="checkbox" name="appetizer" value="3">Nachos con Queso - $3<input type="number" name="quantity" min="0"><br>
+        <input type="checkbox" name="appetizer" value="3"> Quesadillas - $3 <input type="number" name="quantity" min="0"><br>
+        <input type="checkbox" name="appetizer" value="2"> Tortilla soup - $2 <input type="number" name="quantity" min="0"><br>
+
+        <!--Entrees-->
+        <h2>Entrees</h2>
+        <input type="checkbox" name="entree" value="7"> Tacos al Carbon - $7 <input type="number" name="quantity" min="0"><br>
+        <label><input type="radio" name="Tacos1riceandbeans" value="yes" checked> with rice and beans</label> <label><input type="radio" name="Tacos1riceandbeans" value="no"> without rice and beans</label><br>
+        <input type="checkbox" name="entree" value="9"> Tacos al Pastor - $9 <input type="number" name="quantity" min="0"><br>
+        <label><input type="radio" name="Tacos2riceandbeans" value="yes" checked> with rice and beans</label> <label><input type="radio" name="Tacos2riceandbeans" value="no"> without rice and beans</label><br>
+        <input type="checkbox" name="entree" value="6"> Enchiladas - $6 <input type="number" name="quantity" min="0"><br>
+        <label><input type="radio" name="Enchiladasriceandbeans" value="yes" checked> with rice and beans</label> <label><input type="radio" name="Enchiladasriceandbeans" value="no"> without rice and beans</label><br>
+        <input type="checkbox" name="entree" value="10"> Beef &amp; Chicken parrillada - $10 <input type="number" name="quantity" min="0"> <br>
+        <label><input type="radio" name="riceandbeans" value="yes" checked> with rice and beans</label> <label><input type="radio" name="riceandbeans" value="no"> without rice and beans</label>
+       
+        <!--Desserts-->
+        <h2>Dessert</h2>
+        <input type="checkbox" name="dessert" value="1"> Churros - $1 <input type="number" name="quantity" min="0"><br>
+        <input type="checkbox" name="dessert" value="1"> Pastel - $1 <input type="number" name="quantity" min="0"><br>
+        <input type="checkbox" name="dessert" value="1"> Ice Cream - $1 <input type="number" name="quantity" min="0"><br>
+
+        <!-- Tip Option-->
+        <h2>Tip</h2>
+        <input type="radio" name="tipBox">Tip:  <input type="number" name="tip" min="0"><br>
+
+        <!--Submit Button-->
+        <input type="button" value="Display Check" onclick="return calculateBill()">
+    </form>
+
+    <p>---------------------------------</p>
+    <p id="total"></p>
+    <p id="tip"></p>
+    <p id="grandTotal"></p>
+    <p>---------------------------------</p>
+
+
+</body>
+</html>
