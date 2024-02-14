@@ -1,2 +1,2 @@
 # Restaurant-Webpage
-A simple webpage with a home page, a order form, and a calulator. 
+A simple webpage with a home page, a order form, and a calulator. This restaurant web program offers a seamless solution for customers to place orders online while efficiently calculating the total price based on the items selected. With an intuitive user interface, customers can browse through our menu, add items to their order, specify quantities, and customize options as needed. 
